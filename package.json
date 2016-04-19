@@ -1,0 +1,34 @@
+{
+  "name": "number_converter",
+  "version": "1.0.0",
+  "description": "Convert integers or roman numerals to english",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eternal44/numToEnglish.git"
+  },
+  "keywords": [
+    "convert",
+    "number",
+    "number",
+    "english",
+    "roman",
+    "numeral"
+  ],
+  "author": "James Youn <jamesyoun710@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eternal44/numToEnglish/issues"
+  },
+  "homepage": "https://github.com/eternal44/numToEnglish#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-spawn-mocha": "^2.2.2",
+    "mocha": "^2.4.5"
+  }
+}

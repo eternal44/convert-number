@@ -1,4 +1,4 @@
-# number-to-english [![Build Status](https://travis-ci.org/eternal44/number-to-english.svg?branch=master)](https://travis-ci.org/eternal44/number-to-english)
+# convert-number [![Build Status](https://travis-ci.org/eternal44/convert-number.svg?branch=master)](https://travis-ci.org/eternal44/convert-number)
 
 
 > Convert numbers from one format to another.
@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save number-to-english
+$ npm install --save convert-number
 ```
 
 ## Development
@@ -30,9 +30,9 @@ $ mocha specs/**
 ## Usage
 
 ```js
-var numberToEnglish = require('number-to-english')
+var convertNumber = require('convert-number')
 
-numberToEnglish(2450)
+convertNumber(2450)
 // two thousand four hundred fifty
 ```
 ## License

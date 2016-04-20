@@ -9,6 +9,14 @@
 $ npm install --save number-to-english
 ```
 
+## Install
+To run tests follow the following instructions.
+
+```
+$ npm install -g gulp
+$ npm install -g mocha
+```
+
 ## Usage
 
 ```js

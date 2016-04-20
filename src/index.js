@@ -146,19 +146,4 @@ var arrayifyNumber = function(number){
   return placeArray;
 }
 
-// // add as tests!
-// console.log(numberToEnglish(540));
-// console.log(numberToEnglish(0));
-// console.log(numberToEnglish(112));
-// console.log(numberToEnglish(12));
-// console.log(numberToEnglish(10));
-// console.log(numberToEnglish(122));
-// console.log(numberToEnglish(355003));
-// console.log(numberToEnglish(9007199254740992));// 9,007,199,254,740,992
-// console.log(numberToEnglish(1000000000000000000));//
-// console.log(numberToEnglish(17490));//
-// console.log(numberToEnglish(78193512));//
-// console.log(numberToEnglish(2385024582));//
-// console.log(numberToEnglish(973563700353));//
-
 module.exports = numberToEnglish;

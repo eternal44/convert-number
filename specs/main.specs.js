@@ -1,5 +1,5 @@
 var should = require('chai').should();
-var smoke = require('./../index');
+var smoke = require('./../src/index');
 
 describe('#smoke test', function(){
   it('tests that true equals true', function(){

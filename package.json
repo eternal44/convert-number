@@ -1,5 +1,5 @@
 {
-  "name": "number_converter",
+  "name": "number-to-english",
   "version": "1.0.0",
   "description": "Convert integers or roman numerals to english",
   "main": "index.js",
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "convert",
-    "number",
     "number",
     "english",
     "roman",

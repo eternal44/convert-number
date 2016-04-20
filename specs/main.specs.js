@@ -1,11 +1,10 @@
 var expect = require('chai').expect;
 var numberToEnglish = require('./../src/index');
 var testParams = require('./testList')
-console.log(numberToEnglish(2));
 
-describe('#smoke test', function(){
+describe('test input and output', function(){
   testParams.forEach(function(param){
-    it(param.description, function(){
+    it('translate ' + param.description + 'to an integer', function(){
       expect(param.description).to.equal(numberToEnglish(param.integer));
     })
   })

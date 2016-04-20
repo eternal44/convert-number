@@ -1,11 +1,11 @@
 var maps = require('./placesMap.js')();
 
-var tscribe = function(){
+var transcribe = function(){
   return function(subset){
     var numLength = subset.length;
 
     var transcribeOneDigit = function(subset){
-      return maps.onesMap[subset[0]]
+      return maps.onesMap[subset[0]];
     };
 
     var transcribeTwoDigits = function(subset){
@@ -13,34 +13,33 @@ var tscribe = function(){
       var onesPlace = subset[1];
       var tensDash = '';
 
-      if(onesPlace != 0) tensDash = '-';
-
+      if(onesPlace !== '0') tensDash = '-';
 
       if(tensPlace === '1'){
         return maps.teensMap[onesPlace];
       } else if(tensPlace > 5 && tensPlace != 8) {
         return maps.onesMap[tensPlace] + 'ty' + tensDash + maps.onesMap[onesPlace];
       } else {
-        if(tensPlace == 0){
+        if(tensPlace === '0'){
           return maps.onesMap[onesPlace];
-        } else if(onesPlace == 0){
+        } else if(onesPlace === '0'){
           return maps.tensMap[tensPlace];
         } else {
           return maps.tensMap[tensPlace] + '-' + maps.onesMap[onesPlace];
         }
       }
-    }
+    };
 
     var transcribeTreeDigits = function(subset){
       var hundredsPlace = subset[0];
       var tensPlace = subset[1];
 
       var tensHundredsSpace;
-      tensPlace != 0 ? tensHundredsSpace = ' ' : tensHundredsSpace = '';
+      tensPlace !== '0' ? tensHundredsSpace = ' ' : tensHundredsSpace = '';
 
       // if the hundreds place is 0 we don't want to include it's suffix
-      return hundredsPlace == 0 ? '' : maps.onesMap[hundredsPlace] + ' hundred' + tensHundredsSpace;
-    }
+      return hundredsPlace === '0' ? '' : maps.onesMap[hundredsPlace] + ' hundred' + tensHundredsSpace;
+    };
 
     // transcribing
     if(numLength === 1) return transcribeOneDigit(subset);
@@ -51,7 +50,7 @@ var tscribe = function(){
 
       return (transcribeTreeDigits(subset) + transcribeTwoDigits(slicedArr));
     }
-  }
-}
+  };
+};
 
-module.exports = tscribe;
+module.exports = transcribe;

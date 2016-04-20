@@ -41,7 +41,7 @@ var placesMap = function() {
       5 : 'quadrillion',
       6 : 'quintillion'
     }
-  }
-}
+  };
+};
 
 module.exports = placesMap;

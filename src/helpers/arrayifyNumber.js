@@ -9,6 +9,6 @@ var arrayifyNumber = function(number){
 
   placeArray.unshift(splitNum);
   return placeArray;
-}
+};
 
 module.exports = arrayifyNumber;

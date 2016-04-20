@@ -1,9 +1,9 @@
 var maps = require('./helpers/placesMap')();
+var arrayifyNumber = require('./helpers/arrayifyNumber');
+var transcribe = require('./helpers/transcribe')();
 
 function numberToEnglish (number) {
-  // import helper functions
   var placeArray = arrayifyNumber(number);
-  var transcribe = require('./helpers/transcribe')();
 
   // concat the transcribed number to results string
   var transcribedResult = '';
@@ -22,27 +22,6 @@ function numberToEnglish (number) {
   if(number == 10) return 'ten'; 
 
   return transcribedResult.trim();
-}
-
-/*
- * ####################
- * # HELPER FUNCTIONS #
- * ####################
- */
-
-// make function to transcribe subsets
-var arrayifyNumber = function(number){
-  // break number into subsets of 3 digits
-  var splitNum = number.toString().split('');
-  var placeArray = [];
-
-  while(splitNum.length > 3){
-    placeArray.unshift(splitNum.splice(splitNum.length-3));
-  }
-
-  placeArray.unshift(splitNum);
-  // console.log(placeArray);
-  return placeArray;
 }
 
 module.exports = numberToEnglish;

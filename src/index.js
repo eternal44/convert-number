@@ -2,6 +2,4 @@ function smokeTest(){
   return true;
 }
 
-module.exports = {
-  smokeTest: smokeTest
-}
+module.exports = smokeTest;

@@ -1,6 +1,6 @@
-var numToEnglish = require('./../src/index');
-
 module.exports = [
-{ description: "commas are rotated properly", run: numToEnglish()},
+  { description: "one-hundred twelve", integer: 112 },
+  { description: "zero", integer: 0 },
+  { description: "five-hundred forty", integer: 540 }
 ]
 

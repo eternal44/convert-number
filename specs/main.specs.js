@@ -1,9 +1,12 @@
-var should = require('chai').should();
-var smoke = require('./../src/index');
-var tests = require('./testList')
+var expect = require('chai').expect;
+var numberToEnglish = require('./../src/index');
+var testParams = require('./testList')
+console.log(numberToEnglish(2));
 
 describe('#smoke test', function(){
-  it('tests that true equals true', function(){
-    smoke().should.equal(true);
+  testParams.forEach(function(param){
+    it(param.description, function(){
+      expect(param.description).to.equal(numberToEnglish(param.integer));
+    })
   })
-})
+});

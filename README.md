@@ -1,4 +1,5 @@
-# number-to-english
+# number-to-english [![Build Status](https://travis-ci.org/eternal44/number-to-english.svg?branch=master)](https://travis-ci.org/eternal44/number-to-english)
+
 
 > utility module for converting integers to English
 

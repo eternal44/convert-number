@@ -1,7 +1,7 @@
 # number-to-english [![Build Status](https://travis-ci.org/eternal44/number-to-english.svg?branch=master)](https://travis-ci.org/eternal44/number-to-english)
 
 
-> utility module for converting integers to English
+> Convert numbers from one format to another.
 
 ## Install
 
@@ -9,12 +9,22 @@
 $ npm install --save number-to-english
 ```
 
-## Install
-To run tests follow the following instructions.
+## Development
+To run tests follow the following instructions:
 
 ```
 $ npm install -g gulp
 $ npm install -g mocha
+```
+
+To run tests on file changes:
+```
+$ gulp test
+```
+
+Alternatively you can run individual tests:
+```
+$ mocha specs/**
 ```
 
 ## Usage

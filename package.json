@@ -1,7 +1,7 @@
 {
-  "name": "number-to-english",
-  "version": "1.0.0",
-  "description": "Convert integers or roman numerals to english",
+  "name": "convert-number",
+  "version": "0.1.0",
+  "description": "Convert numbers from one format to another",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
